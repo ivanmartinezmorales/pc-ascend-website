@@ -1,13 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 
-
-.heading-text {
-    font-family: "Roboto", sans-serif; 
+.header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
-.container {
+.heading-text {
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+
+}
+
+.container-main {
     font-family: "Open Sans", sans-serif;
     display: flex;
     flex-flow: column;
-    padding: 2em;
+    padding-top: 2em;
+    padding-bottom:0;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+}
+
+.the-logo {
+    height: 50%;
+    padding: 0;
 }

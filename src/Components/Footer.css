@@ -1,0 +1,21 @@
+p {
+    font-size: 0.8em;
+    text-justify: center;
+}
+
+.footer-container {
+
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-justify: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+ul {
+    font-size: 0.8rem;
+}
