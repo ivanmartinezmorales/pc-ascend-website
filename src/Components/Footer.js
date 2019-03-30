@@ -5,9 +5,12 @@ class Footer extends Component {
     render () {
         return (
             <div className="footer-container">
-                <p>This website was created with React.</p>
+                <p style={{textAlign: "center"}}>This website was created with React.</p>
                 
-                <p>Special Thanks to: Mr. Ernest Villacana | Mr. Adam Jimenez | ANSR | Arizona Space Grant Consortium</p>
+                <p style={{textAlign: "center", paddingTop: "2rem"}}>Special Thanks to:</p>
+                <p> Mr. Ernest Villacana  |  Mr. Adam Jimenez  |  ANSR  |  Arizona Space Grant Consortium</p>
+
+
             </div>
         );
     };
