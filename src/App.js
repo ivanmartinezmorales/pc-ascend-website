@@ -24,7 +24,7 @@ class App extends Component {
 class Description extends Component {
 	render() {
 		return(
-			<div className="container">
+			<div className="container-main">
 
 				<h2 className="heading-text">Description</h2>
 				<p>ASCEND! is a high altitude balloon project funded by NASA. The purpose of the project is to give students the opportunity to learn and apply principles of engineering on a project. It requires teamwork to achieve the goal of creating a housing and a payload, (and in our case a ground station) that is reliable and tested, all while meeting the time and fiscal requirements of the project.</p>
@@ -38,7 +38,7 @@ class Description extends Component {
 class Link extends Component {
     render() {
         return (
-            <div>
+			<div className="container-main">
                 <h2>Here's the link to our live stream!</h2>
                 <h3>Our livestream will be live on March 30th, 2019 at 9 AM EST. </h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dGtF_c5YTZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
