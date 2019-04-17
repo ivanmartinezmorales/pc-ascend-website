@@ -4,17 +4,18 @@ import './App.css';
 // IMPORTING COMPONENTS
 // import Description from './Components/Description';
 import Footer from './Components/Footer';
+import Video from './Video';
 
 class App extends Component {
     render() {
 	return (
 	<div className="container-main">
 		<div className="header">
-		    <h1 className="heading-text">Phoenix College ASCEND!</h1>
-			<h2 className="heading-text">A High-Altitude Ballooning (HAB) Project</h2>
- 	       <img className="the-logo" src="https://i.ibb.co/sR0QsmL/Bear.png"></img>
+		<img className="the-logo" src="https://i.ibb.co/sR0QsmL/Bear.png" style={{height: "112px", float: "left", paddingRight: "1em"}}></img>
+		    <h1 className="heading-text" style={{fontSize: "2.5em", marginBottom: "0em", paddingBottom: "0em", textAlign: "right"}}>Phoenix College ASCEND!</h1>
+			<h2 className="heading-text" style={{fontSize: "1.25em", marginTop: "0em", textAlign: "right"}}>🎈&nbsp;A High-Altitude Ballooning (HAB) Project</h2>
 		</div>
-		<Link/>
+		<Video/>
 		<Description/>
 		<Footer/>
 	</div>
@@ -25,30 +26,18 @@ class Description extends Component {
 	render() {
 		return(
 			<div className="container-main">
-
 				<h2 className="heading-text">Description</h2>
 				<p className="body-text">ASCEND! is a high altitude balloon project funded by NASA. The purpose of the project is to give students the opportunity to learn and apply principles of engineering on a project. It requires teamwork to achieve the goal of creating a housing and a payload, (and in our case a ground station) that is reliable and tested, all while meeting the time and fiscal requirements of the project.</p>
-				<p>The team:</p>
-				<ul>{listTeamMembers}</ul>
+				<p className="body-text" style={{textDecoration: "underline"}}>The Spring 2019 Team:</p>
+				<ul className="body-text">{listTeamMembers}</ul>
 			</div>
 		)
 	}
 }
 
-class Link extends Component {
-    render() {
-        return (
-			<div className="container-main">
-                <h2>Here's the link to our live stream!</h2>
-                <h3>Our livestream will be live on March 30th, 2019 at 9 AM EST. </h3>
-				<a href="https://www.youtube.com/watch?v=dGtF_c5YTZ8">Click here to watch!!!</a>
-            </div>
-        );
-    };
-};
 
 const teamMembers = [
-    'Eunice Lopez',
+    'Eunice Lopez - Team Lead',
     'Jess Frantz',
     'Chris Yurgel',
 	'Modest Juarez',
@@ -56,7 +45,6 @@ const teamMembers = [
 	'Isai Uriarte',
 	'Jackie Salazar',
 	'Ivan Martinez',
-	'Ernest Villacana - Faculty Mentor'
 ];
 
 const listTeamMembers = teamMembers.map((teamMember) => <li>{teamMember}</li>);
