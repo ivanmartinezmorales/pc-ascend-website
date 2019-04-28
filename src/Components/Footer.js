@@ -8,7 +8,7 @@ class Footer extends Component {
                 <p style={{textAlign: "center"}}>This website was created with React.</p>
                 
                 <p style={{textAlign: "center", paddingTop: "2rem"}}>Special Thanks to:</p>
-                <p> Mr. Ernest Villacana  |  Mr. Adam Jimenez  |  ANSR  |  Arizona Space Grant Consortium</p>
+                <p> Mr. Ernest Villicana | Dr. Ed Ong | Mr. Adam Jimenez | ANSR | Arizona Space Grant Consortium</p>
 
 
             </div>

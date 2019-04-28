@@ -25,7 +25,7 @@ const teamMembers = [
 	'Isai Uriarte',
 	'Jackie Salazar',
 	'Ivan Martinez',
-	'Ernest Villacana - Faculty Mentor'
+	'Ernest Villicana - Faculty Mentor'
 ];
 
 const listTeamMembers = teamMembers.map((teamMember) => <li>{teamMember}</li>);
