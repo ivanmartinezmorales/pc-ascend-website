@@ -5,6 +5,7 @@ import './App.css';
 // import Description from './Components/Description';
 import Footer from './Components/Footer';
 import Video from './Video';
+import PhotoCollage from './Components/PhotoCollage';
 
 class App extends Component {
     render() {
@@ -18,6 +19,7 @@ class App extends Component {
 		<Video/>
 		<Description/>
 		<Footer/>
+		<PhotoCollage/>
 	</div>
 	)};
 

@@ -1,7 +1,8 @@
+R7mM0NYZv60
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
+import Youtube from 'react-youtube';
 
-class Video extends Component {
+export default class PresentationVideo extends Component {
     render() {
         const opts = {
             height: '480',
@@ -11,16 +12,16 @@ class Video extends Component {
             }
         };
         return (
-            <YouTube
-                videoId="IOfVT1-cUIE"
+            <div>
+                <YouTube
+                videoId="R7mM0NYZv60"
                 opts={opts}
                 onReady={this._onReady}
             />
+            </div>
         );
     };
     _onReady(event) {
         event.target.pauseVideo();
     }
 };
-
-export default Video;

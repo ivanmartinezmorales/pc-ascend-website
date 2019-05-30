@@ -10,8 +10,14 @@ class Photo extends Component {
   render() {
     return (
       <div className='photo'>
-        <img src={this.props.photo} alt={this.props.alt}/>
-        <p>{this.props.caption}</p>
+        <img src={this.props.photo} 
+        style={{maxHeight: "225px", 
+                paddingLeft: "0.25em", 
+                paddingRight:"0.25em", 
+                paddingBottom: "0.5em", 
+                paddingTop: "0.5em"
+               }}alt={this.props.alt}/>
+        {/* <p style={{paddingTop: "0.25em", paddingLeft: "0.5em"}}>{this.props.caption}</p> */}
       </div>
     )
   }
